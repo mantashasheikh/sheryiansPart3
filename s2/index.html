@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .user-form {
+            background: #fff;
+            padding: 20px;
+            width: 320px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .user-form h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .user-form input,
+        .user-form textarea,
+        .user-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .user-form button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .user-form button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="user-form">
+        <h2>Add User</h2>
+
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="url" placeholder="Profile Image URL">
+        <textarea rows="3" placeholder="Bio"></textarea>
+
+        <button type="submit">Add User</button>
+    </form>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
