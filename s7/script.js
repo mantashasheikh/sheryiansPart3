@@ -4,7 +4,7 @@ function getUser(){
     .then((raw) => raw.json())
     .then((data) => {
          const userDiv = document.querySelector(".users")
-            userDiv.innerHTML = ""
+            userDiv.innerHTML = " "
 
            data.results.forEach(function(user){
             
