@@ -1,0 +1,45 @@
+/* Reset & base tweaks */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center users container nicely */
+.users {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Fix refresh button position */
+#refreshBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Button icon animation on hover */
+#refreshBtn svg {
+    transition: transform 0.4s ease;
+}
+
+#refreshBtn:hover svg {
+    transform: rotate(180deg);
+}
+
+/* Click feedback */
+#refreshBtn:active {
+    transform: scale(0.95);
+}
+
+/* Smooth theme consistency */
+body {
+    background-color: #111827; /* gray-900 */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
